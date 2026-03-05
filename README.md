@@ -67,7 +67,6 @@ my-azure-app/
 | `/upload` | POST | Upload file to Azure Blob Storage |
 | `/files` | GET | List all files in Blob Storage |
 
-Interactive API docs available at: `http://<PUBLIC_IP>/docs`
 
 ---
 
