@@ -16,6 +16,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug - List all files
+        run: |
+          echo "=== Current directory ==="
+          pwd
+          echo ""
+          echo "=== All files in root ==="
+          ls -la
+          echo ""
+          echo "=== Looking for .csproj files ==="
+          find . -name "*.csproj" -type f
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
